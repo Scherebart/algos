@@ -196,19 +196,8 @@ void heapify_through_children(int *arr, int length, int i)
   }
 }
 
+
 void heap_sort(int *arr, int length)
-{
-  print_heap(arr, length);
-
-  for (int i = 1; i < length; i++)
-  {
-    heapify_through_parent(arr, length, i);
-  }
-
-  print_heap(arr, length);
-}
-
-void heap_sort2(int *arr, int length)
 {
   for (int i = length / 2; i >= 0; i--)
   {
